@@ -13,7 +13,6 @@ import sys
 s="12:05:45AM"
 def timeConversion(s):
     hours=int(s[0:2])
-    #print(format(hour,'2f'))
     if s.__contains__("PM"):
         if hours!=12:
             hours=hours+12
