@@ -50,3 +50,16 @@ import re
 import sys
 
 grades = [73, 67, 38, 33]
+rounded=[]
+i=0
+while i < len(grades):
+    if grades[i]<35:
+        rounded.append(grades[i])
+    else:
+        diff=grades[i]%5
+        if diff>=3:
+            rounded.append(grades[i]+(5-diff))
+        else:
+            rounded.append(grades[i])
+    i+=1
+print(rounded)            
